@@ -14,7 +14,7 @@ export type Joke = DeepPartial<typeof jokeSchema>;
 
 export const streamObjectAction = async () => {
   const result = await streamObject({
-    model: openai("gpt-3.5-turbo"),
+    model: openai("gpt-4o"),
     temperature: 0.5,
     prompt: "Tell me a joke.",
     schema: jokeSchema,
